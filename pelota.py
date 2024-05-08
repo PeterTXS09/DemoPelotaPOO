@@ -9,7 +9,8 @@ class Pelota:
         self.posicionY = 200 # <--- posición de inicio en Y
         self.velocidadX = 3.0 # <-- velocidad en X
         self.velocidadY = 3.0 # <-- velocidad en Y
-
+    def posicion_inicial(self):
+        self.ball_rect.topleft = (self.posicionX, self.posicionY)
     def moverse(self, ancho, alto):
         # posicionX es menor que 0 o posicionX + ancho de la pelota >= ancho de la pantalla
         if self.posicionX <= 0 or self.posicionX + self.ball.get_width() >= ancho:
