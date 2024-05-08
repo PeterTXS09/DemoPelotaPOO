@@ -6,7 +6,7 @@ pygame.init() # inicializar juego
 screen = pygame.display.set_mode((800, 600)) # tamaño (ancho, alto)
 
 p = Pelota()
-p.ball_rect.topleft = (p.posicionX, p.posicionY)
+p.posicion_inicial()
 
 clock = pygame.time.Clock() # <--- crear un reloj
 game_over = False
